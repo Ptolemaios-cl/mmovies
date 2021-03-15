@@ -1,0 +1,63 @@
+body{
+    background: #fff;
+    color: #131718;
+}
+
+.movie-app{
+    max-width:980px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.movie-app > .row{
+    overflow-x : auto;
+    flex-wrap: wrap;
+}
+.movie-box{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 40px 0 rgba(52, 58, 64, 0.1);
+    margin-bottom: 30px;
+    display:block;
+    box-sizing: border-box;
+    cursor:pointer;
+    &:hover{
+        transform: translateY(-10px);
+        transition: all .3s ease;
+        border-radius: 5px;
+    }
+    .image-container{
+        max-height: 350px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .content-container{
+        position: relative;
+        padding: 30px;
+        .inner{
+            box-sizing: border-box;
+            .fav-button{
+                padding: 6px 0;
+            }
+            h2{
+                padding: 0;
+                font-size: 1.9em;
+                font-weight: 500;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #948a99;
+            }
+        }
+    }    
+}
+  
+  
+  
